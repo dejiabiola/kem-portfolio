@@ -7,3 +7,9 @@
 @import './results.scss';
 @import './footer.scss';
 @import './trip-card.scss';
+@import "~bootstrap/scss/bootstrap";
+
+
+body {
+  background: green;
+}
