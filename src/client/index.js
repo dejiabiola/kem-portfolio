@@ -7,7 +7,7 @@ import 'bootstrap';
 import './styles/entry.scss';
 
 // Inport images
-import './media/sun.svg';
+import './media/behance.svg';
 
 
 
