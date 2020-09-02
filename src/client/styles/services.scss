@@ -1,29 +1,37 @@
+.services-section {
+  margin-bottom: 27.6rem;
+
+  .services-header {
+    margin-bottom: 5.8rem;
+  }
+}
+
 .services-card-wrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 40px;
+  gap: 4.0rem;
 }
 
 
 .services-card {
   background: #ffffff;
-  box-shadow: 0px 8px 16px rgba(51, 51, 51, 0.2);
-  border-radius: 8px;
-  width: 357px;
-  height: 300px;
+  box-shadow: .0rem .8rem 1.6rem rgba(51, 51, 51, 0.2);
+  border-radius: .8rem;
+  width: 35.7rem;
+  min-height: 30.0rem;
   max-width: 100%;
-  padding: 16px 43px 22px 35px;
+  padding: 1.6rem 4.3rem 2.2rem 3.5rem;
   position: relative;
 
   &:after {
     content: "";
     position: absolute;
     width: 100%;
-    height: 10px;
+    height: 1.0rem;
     bottom: 0;
     left: 0;
-    border-radius: 0px 0px 8px 8px;
+    border-radius: .0rem .0rem .8rem .8rem;
    
   }
 
@@ -40,12 +48,12 @@
   }
 
   div {
-    width: 80px;
-    height: 80px;
+    width: 8.0rem;
+    height: 8.0rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 27px;
+    margin-bottom: 2.7rem;
     border-radius: 50%;
   }
 
@@ -65,18 +73,18 @@
     font-family: SF Pro Display;
     font-style: normal;
     font-weight: bold;
-    font-size: 18px;
-    line-height: 21px;
+    font-size: 1.8rem;
+    line-height: 2.1rem;
     color: #2b2b2b;
-    margin-bottom: 30px;
+    margin-bottom: 3.0rem;
   }
 
   p {
     font-family: SF Pro Display;
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
-    line-height: 19px;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
     color: #2B2B2B;
   }
 }

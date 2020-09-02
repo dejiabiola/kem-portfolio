@@ -1,5 +1,5 @@
 footer {
-  height: 171px;
+  height: 17.1rem;
   background: #212121;
   display: flex;
   flex-direction: column;
@@ -7,14 +7,14 @@ footer {
   align-items: center;
 
   & > div:nth-of-type(1) {
-    margin-bottom: 14px;
+    margin-bottom: 1.4rem;
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
   & > div:nth-of-type(2) {
-    width: 150.54px;
+    width: 15.054rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
