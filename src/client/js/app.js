@@ -114,8 +114,21 @@ export const init = function () {
   })
 
   $(document).ready(
-    Aos.init()
+    Aos.init({
+      offset: 200,
+      delay: 100,
+      duration: 600,
+      mirror: true
+    })
   )
+
+  $(window).on("scroll", function(){
+
+    if($("body").scrollTop() === 500){
+      console.log("boo 💪🏽")
+      // Do some stuff here ..
+    }
+  })
 
   checkIfSectionInView()
 }
