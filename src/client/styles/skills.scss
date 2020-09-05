@@ -1,0 +1,78 @@
+.skills-section {
+  background: #212121;
+  padding-top: 6.6rem;
+  margin-bottom: 15.3rem;
+  padding-bottom: 14.5rem;
+
+  &.hidden {
+
+    .skills-boxes-wrapper {
+      display: none
+    }
+  }
+
+  .skills-header {
+    margin-bottom: 3.2rem;
+  }
+
+  .skills-boxes-wrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 3rem;
+
+    .box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .chart {
+        height: 15rem;
+        width: 15rem;
+        position: relative;
+        text-align: center;
+        font-family: "SF Pro Display";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 2.4rem;
+        line-height: 2.9rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2.8rem;
+
+        &.chart-1 {
+          color: #00aeff;
+        }
+
+        &.chart-2 {
+          color: #f26c4f;
+        }
+
+        &.chart-3 {
+          color: #00ffbb;
+        }
+
+        &.chart-4 {
+          color: #ffe240;
+        }
+      }
+
+      h6 {
+        font-family: "SF Pro Display";
+        font-style: normal;
+        font-weight: bold;
+        font-size: 2rem;
+        line-height: 2.4rem;
+        text-align: center;
+        color: #ffffff;
+      }
+
+      canvas {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+  }
+}

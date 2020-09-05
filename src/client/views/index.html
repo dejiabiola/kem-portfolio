@@ -6,6 +6,7 @@
       name="viewport"
       content="width=device-width, initial-scale=1, minimum-scale=1"
     />
+    
     <link rel="shortcut icon" type="image/svg" href="" />
     <title>Kem Kem | Product designer and frontend developer</title>
   </head>
@@ -43,10 +44,10 @@
         </nav>
         <div class="hero-wrapper">
           <div class="hero-text-wrapper">
-            <p>Hi There 👋 I'm</p>
+            <p class="hi">Hi There 👋 I'm</p>
             <h1>Oluwakemi Adeleke</h1>
             <h3>Ui/Ux Designer + Developer</h3>
-            <p>I’m a professional UI/UX designer with front end development skills based in Lagos.</p>
+            <p class="info">I’m a professional UI/UX designer with front end development skills based in Lagos.</p>
               <a href="contact-form">
                 <span>Hire Me</span>
               </a>
@@ -59,18 +60,52 @@
     </header>
 
     <main>
-      <section class="about">
-
+      <section class="about-section container">
+        <div class="image-div" data-aos="fade-right" data-aos-offset="700">
+          <img src="../media/kemi.jpeg" alt="kemi adeleke profile picture">
+        </div>
+        <div class="about-text-div">
+          <div class="header about-header">
+            <div class="inner">
+              <div>
+                <span>Who I am</span>
+                <span class="line"></span>
+              </div>
+              <h3>About Me</h3>
+            </div>
+            
+          </div>
+          <div class="text">
+            <p>
+              I’m Oluwakemi Adeleke, a talented ui/ux designer with front end development skills. 
+              I have experience in web development, content writing, product designing and SEO analytics.
+            </p>
+            <p>
+              I develop websites with HTML, CSS and JavaScript. I have top skills  in using design softwares like 
+              Figma, Adobe XD,  and PhtotShop ; with prototype tools like  InVision and Protopie
+            </p>
+            <p>
+              Being a  diligent, hardworking and result oriented lady, I always work towards achieving best 
+              result on each project I lay my hands on.
+            </p>
+          </div>
+          <a href="">
+            <span>Download CV</span>
+          </a>
+        </div>
       </section>
-    </main>
+   
 
     <section class="services-section container">
       <div class="header services-header">
-        <div>
-          <span>What I do</span>
-          <span class="line"></span>
+        <div class="inner">
+          <div>
+            <span>What I do</span>
+            <span class="line"></span>
+          </div>
+          <h3>My Services</h3>
         </div>
-        <h3>My Services</h3>
+        
       </div>
       <div class="services-card-wrapper">
         <div class="services-card interface">
@@ -110,15 +145,50 @@
         </div>
       </div>
     </section>
+
+    <section class="skills-section">
+      <div class="container">
+        <div class="header skills-header">
+          <div class="inner">
+            <div>
+              <span>Skills Level</span>
+              <span class="line"></span>
+            </div>
+            <h3>My Skills</h3>
+          </div>
+        </div>
+        <div class="skills-boxes-wrapper">
+          <div class="box">
+            <div class="chart chart-1" data-percent="80">80%</div>
+            <h6>Digital Marketing</h6>
+          </div>
+          <div class="box">
+            <div class="chart chart-2" data-percent="90">90%</div>
+            <h6>UX Design</h6>
+          </div>
+          <div class="box">
+            <div class="chart chart-3" data-percent="95">95%</div>
+            <h6>UI Design</h6>
+          </div>
+          <div class="box">
+            <div class="chart chart-4" data-percent="75">75%</div>
+            <h6>Web Development</h6>
+          </div>
+        </div>
+      </div>
+    </section>
     
 
     <section class="workflow-section container">
       <div class="header workflow-header">
-        <div>
-          <span>Work Flow</span>
-          <span class="line"></span>
+        <div class="inner">
+          <div>
+            <span>Work Flow</span>
+            <span class="line"></span>
+          </div>
+          <h3>My Work Process</h3>
         </div>
-        <h3>My Work Process</h3>
+        
       </div>
       <div class="cards-wrapper">
         <div class="card idea">
@@ -146,10 +216,13 @@
 
     <section class="portfolio-section container">
       <div class="header portfolio-header">
-        <div>
-          <span>My Project</span>
-          <span class="line"></span>
+        <div class="inner">
+          <div>
+            <span>My Project</span>
+            <span class="line"></span>
+          </div>
         </div>
+        
         <h3>My Portfolio</h3>
       </div>
       <div class="flex-container">
@@ -170,11 +243,14 @@
 
     <section class="contact-section container">
       <div class="header contact-header">
-        <div>
-          <span>Contact Me</span>
-          <span class="line"></span>
+        <div class="inner">
+          <div>
+            <span>Contact Me</span>
+            <span class="line"></span>
+          </div>
+          <h3>Get In Touch</h3>
         </div>
-        <h3>Get In Touch</h3>
+       
       </div>
       <div class="contact-flex">
         <div class="left-icons">
@@ -214,7 +290,7 @@
         </form>
       </div>
     </section>
-
+  </main>
     <footer>
       <div>
         <img src="../media/logo.svg" alt="" />
@@ -254,6 +330,20 @@
         </ul>
       </div>
     </div>
+    
+    <div class="page-designs">
+      <div class="grills">
+        <img src="../media/side-element.svg" alt="" class="element-1">
+        <img src="../media/side-element.svg" alt="" class="element-2">
+        <img src="../media/side-element.svg" alt="" class="element-3">
+        <img src="../media/side-element.svg" alt="" class="element-4">
+      </div>
+      <div class="page-overlay">
+        <div class="layer layer-1"></div>
+        <div class="layer layer-2"></div>
+        <div class="layer layer-3"></div>
+      </div>
+    </div>
 
     <!-- <script>
           // Check that service workers are supported
@@ -265,5 +355,6 @@
               });
           }
       </script> -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/easy-pie-chart/2.1.6/easypiechart.min.js"></script>
   </body>
 </html>

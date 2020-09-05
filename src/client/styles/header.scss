@@ -41,7 +41,7 @@ header {
     .hero-text-wrapper {
       width: 40rem;
       max-width: 100%;
-
+      overflow: hidden;
 
       p:first-of-type {
         text-transform: uppercase;
@@ -113,7 +113,8 @@ header {
     }
 
     .hero-image-wrapper {
-
+      overflow: hidden;
+      
       @media (max-width: 832px) {
         display: none;
       }
