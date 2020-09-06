@@ -1,5 +1,9 @@
 .contact-section {
   margin-bottom: 35.1rem;
+
+  @media (max-width: 500px) {
+    margin-bottom: 20rem;
+  }
 }
 
 .contact-header {
@@ -13,7 +17,7 @@
   justify-content: space-between;
   flex-wrap: wrap;
 
-  @media (max-width: 996px) {
+  @media (max-width: 1066px) {
     justify-content: center;
   }
 
@@ -154,5 +158,9 @@
     text-align: center;
     color: #303030;
     border: none;
+
+    @media (max-width: 1066px) {
+      margin: 0 auto;
+    }
   }
 }

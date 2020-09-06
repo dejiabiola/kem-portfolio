@@ -23,7 +23,7 @@ export const init = function () {
   var element4 = document.getElementsByClassName('chart')[3];
 
 
-  
+
   function checkIfSectionInView() {
     function isInViewport(el) {
       var top = el.offsetTop;
@@ -66,7 +66,7 @@ export const init = function () {
           trackColor: '#373737',
           animate: { enabled: true, duration: 2000 }
         });
-      
+
         new EasyPieChart(element3, {
           barColor: '#00FFBB',
           lineWidth: 7,
@@ -75,7 +75,7 @@ export const init = function () {
           trackColor: '#373737',
           animate: { enabled: true, duration: 2000 }
         });
-      
+
         new EasyPieChart(element4, {
           barColor: '#FFE240',
           lineWidth: 7,
@@ -88,23 +88,23 @@ export const init = function () {
         initial = false
 
       } else {
-  
+
       }
     })
   }
 
-  gsap.to('.layer-1', {y: '-100%', delay: .5})
-  gsap.to('.layer-2', {y: '-100%', delay: .7})
-  gsap.to('.layer-3', {y: '-100%', delay: .9})
-  gsap.to('.page-overlay', {y: '-100%', delay: 1.5})
-  gsap.from('nav', { delay: 1.5, opacity: 0, duration: 2})
-  gsap.from('.hero-text-wrapper .hi', 0.5, { delay: 1.9, opacity: 0, y: '10rem', ease: 'power1.out'})
-  gsap.from('.hero-text-wrapper h1', 0.5, { delay: 2, opacity: 0, y: '10rem', ease: 'power1.out'})
-  gsap.from('.hero-text-wrapper h3', 0.5, { delay: 2.2, opacity: 0, y: '10rem', ease: 'power1.out'})
-  gsap.from('.hero-text-wrapper .info', 0.5, { delay: 2.4, opacity: 0, y: '10rem', ease: 'power1.out'})
-  gsap.from('.hero-text-wrapper a', 0.5, { delay: 2.6, opacity: 0, y: '10rem', ease: 'power1.out'})
-  gsap.fromTo('.hero-image-wrapper img', 0.5, { 
-    x: '30rem', 
+  gsap.to('.layer-1', { y: '-100%', delay: .5 })
+  gsap.to('.layer-2', { y: '-100%', delay: .7 })
+  gsap.to('.layer-3', { y: '-100%', delay: .9 })
+  gsap.to('.page-overlay', { y: '-100%', delay: 1.5 })
+  gsap.from('nav', { delay: 1.5, opacity: 0, duration: 2 })
+  gsap.from('.hero-text-wrapper .hi', 0.5, { delay: 1.9, opacity: 0, y: '10rem', ease: 'power1.out' })
+  gsap.from('.hero-text-wrapper h1', 0.5, { delay: 2, opacity: 0, y: '10rem', ease: 'power1.out' })
+  gsap.from('.hero-text-wrapper h3', 0.5, { delay: 2.2, opacity: 0, y: '10rem', ease: 'power1.out' })
+  gsap.from('.hero-text-wrapper .info', 0.5, { delay: 2.4, opacity: 0, y: '10rem', ease: 'power1.out' })
+  gsap.from('.hero-text-wrapper a', 0.5, { delay: 2.6, opacity: 0, y: '10rem', ease: 'power1.out' })
+  gsap.fromTo('.hero-image-wrapper img', 0.5, {
+    x: '30rem',
     opacity: 0
   }, {
     x: 0,
@@ -122,13 +122,44 @@ export const init = function () {
     })
   )
 
-  $(window).on("scroll", function(){
+  $(document).ready(function () {
+    animateDiv('.a');
+    animateDiv('.b');
+    animateDiv('.c');
+    animateDiv('.d');
+    animateDiv('.e');
+    animateDiv('.f');
+    animateDiv('.g');
+    animateDiv('.h');
+    animateDiv('.i');
+    animateDiv('.j');
+    animateDiv('.k');
+    animateDiv('.l');
+  });
 
-    if($("body").scrollTop() === 500){
-      console.log("boo 💪🏽")
-      // Do some stuff here ..
-    }
-  })
+  function makeNewPosition() {
+
+    // Get viewport dimensions (remove the dimension of the div)
+    // var h = $(window).height() - 50;
+    var h = $(document).height()
+    var w = $(window).width() - 50;
+
+
+    var nh = Math.floor(Math.random() * h);
+    var nw = Math.floor(Math.random() * w);
+
+
+    return [nh, nw];
+
+  }
+
+  function animateDiv(myclass) {
+    var newq = makeNewPosition();
+    $(myclass).animate({ top: newq[0], left: newq[1] }, 9000, function () {
+      animateDiv(myclass);
+    });
+
+  };
 
   checkIfSectionInView()
 }
