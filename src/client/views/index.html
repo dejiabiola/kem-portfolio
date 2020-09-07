@@ -11,10 +11,14 @@
     <title>Kem Kem | Product designer and frontend developer</title>
   </head>
 
-  <body>
-    <header class="header-section">
-      <div class="container">
-        <nav class="navbar navbar-expand-md px-0 main-nav">
+  <body data-spy="scroll" data-target=".navbar" data-offset="200">
+    <header class="header-section" id="home">
+      <nav
+        class="navbar navbar-expand-md px-0 main-nav sticky"
+        data-sticky-wrap="true"
+        data-sticky-class="stuck"
+      >
+        <div class="container px-4">
           <a class="navbar-brand" href="#">
             <img src="../media/logo.svg" alt="" />
           </a>
@@ -30,8 +34,8 @@
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="#"
+              <li class="nav-item">
+                <a class="nav-link" href="#home"
                   >Home <span class="sr-only">(current)</span></a
                 >
               </li>
@@ -49,8 +53,9 @@
               </li>
             </ul>
           </div>
-        </nav>
-
+        </div>
+      </nav>
+      <div class="container">
         <div class="hero-wrapper">
           <div class="hero-text-wrapper">
             <p class="hi">Hi There 👋 I'm</p>
@@ -353,7 +358,7 @@
       </div>
     </footer>
 
-    <div class="mobile-nav">
+    <!-- <div class="mobile-nav">
       <div class="top">
         <img src="../media/logo-small.svg" alt="" />
         <img src="../media/close-btn.svg" alt="" class="close-btn" />
@@ -380,7 +385,7 @@
           </li>
         </ul>
       </div>
-    </div>
+    </div> -->
 
     <div class="page-designs">
       <div class="grills">
@@ -408,45 +413,6 @@
         <div class="k"></div>
         <div class="l"></div>
       </div>
-    </div>
-
-    <div class="nav-wrapper">
-      <nav class="navbar navbar-expand-md px-4 nav-2 container">
-        <a class="navbar-brand" href="#">
-          <img src="../media/logo.svg" alt="" />
-        </a>
-        <button
-          class="navbar-toggler open-nav"
-          type="button"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <img src="../media/menu.svg" alt="" />
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#"
-                >Home <span class="sr-only">(current)</span></a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact Me</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
     </div>
 
     <!-- <script>

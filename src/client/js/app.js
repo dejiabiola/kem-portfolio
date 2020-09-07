@@ -1,20 +1,21 @@
 import $ from 'jquery'
 import Aos from 'aos'
 import { gsap } from "gsap";
+import Sticky from 'sticky-js'
 
 export const init = function () {
 
-  const closeNav = document.querySelector('.close-btn')
-  const openNav = document.querySelector('.open-nav')
-  const mobileNav = document.querySelector('.mobile-nav')
+  // const closeNav = document.querySelector('.close-btn')
+  // const openNav = document.querySelector('.open-nav')
+  // const mobileNav = document.querySelector('.mobile-nav')
 
-  closeNav.addEventListener('click', () => {
-    mobileNav.classList.remove('open')
-  })
+  // closeNav.addEventListener('click', () => {
+  //   mobileNav.classList.remove('open')
+  // })
 
-  openNav.addEventListener('click', () => {
-    mobileNav.classList.add('open')
-  })
+  // openNav.addEventListener('click', () => {
+  //   mobileNav.classList.add('open')
+  // })
 
 
   var element1 = document.getElementsByClassName('chart')[0];
@@ -22,31 +23,28 @@ export const init = function () {
   var element3 = document.getElementsByClassName('chart')[2];
   var element4 = document.getElementsByClassName('chart')[3];
 
+  function isInViewport(el) {
+    var top = el.offsetTop;
+    var left = el.offsetLeft;
+    var width = el.offsetWidth;
+    var height = el.offsetHeight;
 
-
-  function checkIfSectionInView() {
-    function isInViewport(el) {
-      var top = el.offsetTop;
-      var left = el.offsetLeft;
-      var width = el.offsetWidth;
-      var height = el.offsetHeight;
-
-      while (el.offsetParent) {
-        el = el.offsetParent;
-        top += el.offsetTop;
-        left += el.offsetLeft;
-      }
-
-      return (
-        top < (window.pageYOffset + window.innerHeight) &&
-        left < (window.pageXOffset + window.innerWidth) &&
-        (top + height) > window.pageYOffset &&
-        (left + width) > window.pageXOffset
-      );
+    while (el.offsetParent) {
+      el = el.offsetParent;
+      top += el.offsetTop;
+      left += el.offsetLeft;
     }
 
-    let initial = true;
+    return (
+      top < (window.pageYOffset + window.innerHeight) &&
+      left < (window.pageXOffset + window.innerWidth) &&
+      (top + height) > window.pageYOffset &&
+      (left + width) > window.pageXOffset
+    );
+  }
 
+  function checkIfSectionInView() {
+    let initial = true;
     window.addEventListener('scroll', function (event) {
       if (isInViewport(element1) && initial) {
         new EasyPieChart(element1, {
@@ -158,8 +156,9 @@ export const init = function () {
     $(myclass).animate({ top: newq[0], left: newq[1] }, 9000, function () {
       animateDiv(myclass);
     });
-
   };
+
+  var sticky = new Sticky('.sticky');
 
   checkIfSectionInView()
 }

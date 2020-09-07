@@ -13,16 +13,16 @@ header {
   width: 100%;
 }
 
-.nav-wrapper {
-  background: #212121;
-  position: fixed !important;
-  top: 0 !important;
-  width: 100%;
-  z-index: 100;
-  padding-top: 3rem;
-  padding-bottom: 1rem;
-  transform: translateY(-20rem)
+.navbar {
+  padding: 1.5rem 1rem;
+  position: relative;
+  z-index: 900;
 }
+
+.navbar.stuck {
+  background: rgba(33, 33, 33, 0.7); 
+}
+
 
 .nav-item {
   font-family: "Red Hat Display", sans-serif;
@@ -36,13 +36,13 @@ header {
     margin-right: 0;
   }
 
-  &.active .nav-link {
-    color: #00ffff;
-    font-weight: bold;
-  }
-
   .nav-link {
     color: #ffffff;
+
+    &.active {
+      color: #00ffff;
+      font-weight: bold;
+    }
   }
 }
 
@@ -54,7 +54,7 @@ header {
   padding-bottom: 7rem;
   background: #212121;
   position: relative;
-  z-index: 3;
+  // z-index: 3;
   margin-top: 10%;
 
   @media (max-width: 600px) {
