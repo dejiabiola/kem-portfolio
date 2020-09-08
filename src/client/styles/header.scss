@@ -17,12 +17,19 @@ header {
   padding: 1.5rem 1rem;
   position: relative;
   z-index: 900;
+
+  .navbar-toggler {
+    box-shadow: none;
+    outline: none;
+    border: none;
+  }
 }
 
 .navbar.stuck {
-  background: rgba(33, 33, 33, 0.7); 
+  @media (min-width: 768px) {
+    background: rgba(33, 33, 33, 0.7);
+  }
 }
-
 
 .nav-item {
   font-family: "Red Hat Display", sans-serif;
@@ -54,7 +61,6 @@ header {
   padding-bottom: 7rem;
   background: #212121;
   position: relative;
-  // z-index: 3;
   margin-top: 10%;
 
   @media (max-width: 600px) {
@@ -66,10 +72,8 @@ header {
     max-width: 100%;
     overflow: hidden;
 
-
     @media (max-width: 500px) {
       max-width: 24.7rem;
-
     }
 
     p:first-of-type {
@@ -81,6 +85,12 @@ header {
       line-height: 1.9rem;
       color: #ffffff;
       margin-bottom: 1.6rem;
+      display: flex;
+      align-items: center;
+
+      img {
+        margin: 0 7px;
+      }
     }
 
     h1 {
@@ -94,8 +104,7 @@ header {
 
       @media (max-width: 500px) {
         font-size: 3.2rem;
-line-height: 3.8rem;
-
+        line-height: 3.8rem;
       }
     }
 
@@ -111,8 +120,7 @@ line-height: 3.8rem;
 
       @media (max-width: 500px) {
         font-size: 1.6rem;
-line-height: 1.9rem;
-
+        line-height: 1.9rem;
       }
     }
 
@@ -127,8 +135,7 @@ line-height: 1.9rem;
 
       @media (max-width: 500px) {
         font-size: 1.5rem;
-line-height: 1.8rem;
-
+        line-height: 1.8rem;
       }
     }
 
@@ -150,7 +157,7 @@ line-height: 1.8rem;
       }
 
       span {
-        font-family: 'SF Pro Display';
+        font-family: "SF Pro Display";
         font-style: normal;
         font-weight: 500;
         font-size: 1.6rem;
@@ -174,6 +181,125 @@ line-height: 1.8rem;
         height: 40rem;
       }
     }
-    
   }
+}
+
+.mobile-nav {
+  .nav-bar {
+    position: absolute;
+    background-color: #262626;
+    top: 0;
+    z-index: 1000;
+    right: 100%;
+    height: 100%;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: position 2.9s;
+    -webkit-transition: position 2.9s;
+    -moz-transition: position 2.9s;
+    -ms-transition: position 2.9s;
+    -o-transition: position 2.9s;
+  }
+
+  // .toggle .toggle-menu {
+  //     background-color: white;
+  // }
+
+  .nav-list {
+    list-style: none;
+    margin-top: 3rem;
+  }
+
+  .nav-list-item {
+    text-align: center;
+    padding: 10px 0;
+    font-family: "Red Hat Display";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.6rem;
+    line-height: 2.1rem;
+
+    color: #ffffff;
+  }
+
+  .nav-link {
+    color: #fff;
+    font-size: 22px;
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 4px;
+  }
+
+  .nav-link::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    transform: scaleX(0);
+    transition: transform 0.4s ease-in-out;
+    transform-origin: left;
+    -webkit-transition: transform 0.4s ease-in-out;
+    -moz-transition: transform 0.4s ease-in-out;
+    -ms-transition: transform 0.4s ease-in-out;
+    -o-transition: transform 0.4s ease-in-out;
+  }
+
+  .nav-link:hover::before {
+    transform: scaleX(1);
+  }
+}
+
+.toggle {
+  left: 0;
+  // box-shadow: 1px 0 15px 2px rgba(0, 0, 0, 0.4);
+}
+
+.toggle-menu {
+  // background-color: rgba(0, 0, 0, 0.2);
+  // position: fixed;
+  top: 6.2rem;
+  right: 20px;
+  width: 3rem;
+  height: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 2px 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.line {
+  width: 100%;
+  height: 0.188rem;
+  border-radius: 5px;
+  background-color: #00ffbb;
+  transition: transform 0.2s ease-out;
+  -webkit-transition: transform 0.2s ease-out;
+  -moz-transition: transform 0.2s ease-out;
+  -ms-transition: transform 0.2s ease-out;
+  -o-transition: transform 0.2s ease-out;
+}
+
+.toggle .line1 {
+  background-color: #00ffbb;
+  transform: scale(0.9) rotateZ(-45deg) translate(-6px, 4px);
+}
+
+.toggle .line2 {
+  display: none;
+}
+
+.toggle .line3 {
+  background-color: #00ffbb;
+  transform: scale(0.9) rotateZ(45deg) translate(-6px, -4px);
 }

@@ -5,23 +5,18 @@ import Sticky from 'sticky-js'
 
 export const init = function () {
 
-  // const closeNav = document.querySelector('.close-btn')
-  // const openNav = document.querySelector('.open-nav')
-  // const mobileNav = document.querySelector('.mobile-nav')
-
-  // closeNav.addEventListener('click', () => {
-  //   mobileNav.classList.remove('open')
-  // })
-
-  // openNav.addEventListener('click', () => {
-  //   mobileNav.classList.add('open')
-  // })
-
-
   var element1 = document.getElementsByClassName('chart')[0];
   var element2 = document.getElementsByClassName('chart')[1];
   var element3 = document.getElementsByClassName('chart')[2];
   var element4 = document.getElementsByClassName('chart')[3];
+
+  var toggleButton = document.querySelector('.toggle-menu-wrapper');
+  var navBar = document.querySelector('.navbar');
+  var mobileNav = document.querySelector('.nav-bar');
+  toggleButton.addEventListener('click', function () {
+    navBar.classList.toggle('toggle');
+    mobileNav.classList.toggle('toggle');
+  });
 
   function isInViewport(el) {
     var top = el.offsetTop;
@@ -116,7 +111,8 @@ export const init = function () {
       offset: 200,
       delay: 100,
       duration: 600,
-      mirror: true
+      mirror: true,
+      once: true
     })
   )
 
@@ -136,9 +132,6 @@ export const init = function () {
   });
 
   function makeNewPosition() {
-
-    // Get viewport dimensions (remove the dimension of the div)
-    // var h = $(window).height() - 50;
     var h = $(document).height()
     var w = $(window).width() - 50;
 
