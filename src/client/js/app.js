@@ -18,6 +18,8 @@ export const init = function () {
     mobileNav.classList.toggle('toggle');
   });
 
+  
+
   function isInViewport(el) {
     var top = el.offsetTop;
     var left = el.offsetLeft;

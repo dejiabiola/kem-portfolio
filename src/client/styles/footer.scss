@@ -9,6 +9,10 @@ footer {
     justify-content: space-between;
     align-items: center;
 
+    img {
+      cursor: pointer;
+    }
+
     @media (max-width: 500px) {
       flex-direction: column;
     }
