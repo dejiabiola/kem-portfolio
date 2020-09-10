@@ -119,8 +119,8 @@ export const init = function () {
   )
 
   $(document).ready(function () {
-    animateDiv('.a');
-    animateDiv('.b');
+    animateTopDiv('.a');
+    animateTopDiv('.b');
     animateDiv('.c');
     animateDiv('.d');
     animateDiv('.e');
@@ -146,12 +146,33 @@ export const init = function () {
 
   }
 
+  function makeNewPositionForTopAnimation() {
+    var h = $(window).height() - 50;
+    var w = $(window).width() - 50;
+
+
+    var nh = Math.floor(Math.random() * h);
+    var nw = Math.floor(Math.random() * w);
+
+
+    return [nh, nw];
+
+  }
+
   function animateDiv(myclass) {
     var newq = makeNewPosition();
+
     $(myclass).animate({ top: newq[0], left: newq[1] }, 9000, function () {
       animateDiv(myclass);
     });
   };
+
+  function animateTopDiv(myclass) {
+    var topAnim = makeNewPositionForTopAnimation();
+    $(myclass).animate({ top: topAnim[0], left: topAnim[1] }, 9000, function () {
+      animateDiv(myclass);
+    });
+  }
 
   var sticky = new Sticky('.sticky');
 

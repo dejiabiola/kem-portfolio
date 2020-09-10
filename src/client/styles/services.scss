@@ -9,8 +9,7 @@
 .services-card-wrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 4.0rem;
+  justify-content: space-around;
 }
 
 
@@ -23,6 +22,20 @@
   max-width: 100%;
   padding: 1.6rem 4.3rem 2.2rem 3.5rem;
   position: relative;
+  margin-bottom: 2.7rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+
+  
+  @media (max-width: 500px) {
+    padding: 1.6rem 1.3rem 2rem 2.1rem;
+  }
+
+  &.last-of-type {
+    margin-bottom: 0;
+  }
+
+
 
   &:after {
     content: "";

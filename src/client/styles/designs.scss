@@ -107,22 +107,26 @@
       border-radius: 50%;
     }
 
-    div.e, div.a {
+    div.e,
+    div.a {
       background: rgba(255, 226, 64, 0.5);
       opacity: 0.7;
     }
 
-    div.f, div.b {
+    div.f,
+    div.b {
       background: rgba(227, 31, 113, 0.5);
       opacity: 0.7;
     }
 
-    div.g, div.c {
+    div.g,
+    div.c {
       background: rgba(0, 255, 187, 0.5);
       opacity: 0.7;
     }
 
-    div.h, div.d {
+    div.h,
+    div.d {
       background: rgba(0, 174, 255, 0.5);
       opacity: 0.7;
     }
@@ -138,8 +142,23 @@
       height: 0;
       border-left: 20px solid transparent;
       border-right: 20px solid transparent;
-      border-bottom:40px solid rgba(0, 255, 187, 0.5);
+      border-bottom: 40px solid rgba(0, 255, 187, 0.5);
       background: unset;
     }
+  }
+}
+
+@media (max-width: 500px) {
+  div.c,
+  div.d,
+  div.e,
+  div.f,
+  div.g,
+  div.h,
+  div.i,
+  div.j,
+  div.k,
+  div.l {
+    display: none;
   }
 }
