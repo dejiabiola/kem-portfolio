@@ -145,6 +145,7 @@ export const init = function () {
     return [nh, nw];
 
   }
+  
 
   function makeNewPositionForTopAnimation() {
     var h = $(window).height() - 50;
