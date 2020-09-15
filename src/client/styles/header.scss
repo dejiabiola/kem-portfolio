@@ -1,5 +1,5 @@
 header {
-  min-height: 90vh;
+  min-height: 95vh;
   margin-bottom: 21.2rem;
   background: #212121;
 
@@ -60,7 +60,7 @@ header {
   padding-bottom: 7rem;
   background: #212121;
   position: relative;
-  margin-top: 10%;
+  margin-top: 17%;
 
   @media (max-width: 600px) {
     margin-top: 10rem;
@@ -169,15 +169,20 @@ header {
   .hero-image-wrapper {
     overflow: hidden;
 
-    @media (max-width: 832px) {
+    @media (max-width: 880px) {
       display: none;
     }
 
     img {
-      height: 58rem;
+      height: 32.7rem;
+      width: 65.9rem;
 
-      @media (max-width: 1018px) {
-        height: 40rem;
+      @media (max-width: 1090px) {
+        width: 50rem;
+      }
+
+      @media (max-width: 930px) {
+        width: 45rem;
       }
     }
   }
