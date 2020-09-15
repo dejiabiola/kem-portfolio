@@ -119,50 +119,40 @@ export const init = function () {
   )
 
   $(document).ready(function () {
-    animateTopDiv('.a');
-    animateTopDiv('.b');
-    animateDiv('.c');
-    animateDiv('.d');
-    animateDiv('.e');
-    animateDiv('.f');
-    animateDiv('.g');
-    animateDiv('.h');
-    animateDiv('.i');
-    animateDiv('.j');
-    animateDiv('.k');
-    animateDiv('.l');
+    animateDiv('.a');
+    animateDiv('.b');
+    
+  });
+
+  $(document).ready(function () {
+    animateTopDiv('.c');
+    animateTopDiv('.e');
+    animateTopDiv('.f');
+    animateTopDiv('.g');
+    animateTopDiv('.i');
+    animateTopDiv('.j');
+    animateTopDiv('.k');
   });
 
   function makeNewPosition() {
-    var h = $(document).height()
+    var h = $(window).height() - 50;
     var w = $(window).width() - 50;
-
-
     var nh = Math.floor(Math.random() * h);
     var nw = Math.floor(Math.random() * w);
-
-
     return [nh, nw];
-
   }
   
 
   function makeNewPositionForTopAnimation() {
-    var h = $(window).height() - 50;
-    var w = $(window).width() - 50;
-
-
+    var h = $(document).height() - 50;
+    var w = $(window).width() - 50;   
     var nh = Math.floor(Math.random() * h);
     var nw = Math.floor(Math.random() * w);
-
-
-    return [nh, nw];
-
+    return [nh,nw];    
   }
 
   function animateDiv(myclass) {
     var newq = makeNewPosition();
-
     $(myclass).animate({ top: newq[0], left: newq[1] }, 9000, function () {
       animateDiv(myclass);
     });
@@ -171,7 +161,7 @@ export const init = function () {
   function animateTopDiv(myclass) {
     var topAnim = makeNewPositionForTopAnimation();
     $(myclass).animate({ top: topAnim[0], left: topAnim[1] }, 9000, function () {
-      animateDiv(myclass);
+      animateTopDiv(myclass);
     });
   }
 
