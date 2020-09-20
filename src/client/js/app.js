@@ -88,16 +88,16 @@ export const init = function () {
     })
   }
 
-  gsap.to('.layer-1', { y: '-100%', delay: .5 })
-  gsap.to('.layer-2', { y: '-100%', delay: .7 })
-  gsap.to('.layer-3', { y: '-100%', delay: .9 })
-  gsap.to('.page-overlay', { y: '-100%', delay: 1.5 })
-  gsap.from('nav', { delay: 1.5, opacity: 0, duration: 2 })
-  gsap.from('.hero-text-wrapper .hi', 0.5, { delay: 1.9, opacity: 0, y: '10rem', ease: 'power1.out' })
-  gsap.from('.hero-text-wrapper h1', 0.5, { delay: 2, opacity: 0, y: '10rem', ease: 'power1.out' })
-  gsap.from('.hero-text-wrapper h3', 0.5, { delay: 2.2, opacity: 0, y: '10rem', ease: 'power1.out' })
-  gsap.from('.hero-text-wrapper .info', 0.5, { delay: 2.4, opacity: 0, y: '10rem', ease: 'power1.out' })
-  gsap.from('.hero-text-wrapper a', 0.5, { delay: 2.6, opacity: 0, y: '10rem', ease: 'power1.out' })
+  gsap.to('.layer-1', { y: '-100%', delay: .2 })
+  gsap.to('.layer-2', { y: '-100%', delay: .4 })
+  gsap.to('.layer-3', { y: '-100%', delay: .5 })
+  gsap.to('.page-overlay', { y: '-100%', delay: 1.0 })
+  gsap.from('nav', { delay: 1, opacity: 0, duration: 2 })
+  gsap.from('.hero-text-wrapper .hi', 0.5, { delay: 1.6, opacity: 0, y: '10rem', ease: 'power1.out' })
+  gsap.from('.hero-text-wrapper h1', 0.5, { delay: 1.8, opacity: 0, y: '10rem', ease: 'power1.out' })
+  gsap.from('.hero-text-wrapper h3', 0.5, { delay: 2, opacity: 0, y: '10rem', ease: 'power1.out' })
+  gsap.from('.hero-text-wrapper .info', 0.5, { delay: 2.2, opacity: 0, y: '10rem', ease: 'power1.out' })
+  gsap.from('.hero-text-wrapper a', 0.5, { delay: 2.4, opacity: 0, y: '10rem', ease: 'power1.out' })
   gsap.fromTo('.hero-image-wrapper img', 0.5, {
     x: '30rem',
     opacity: 0
@@ -105,7 +105,7 @@ export const init = function () {
     x: 0,
     opacity: 1,
     ease: 'power1.out',
-    delay: 2.3
+    delay: 2
   })
 
   $(document).ready(
