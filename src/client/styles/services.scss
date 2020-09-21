@@ -1,6 +1,10 @@
 .services-section {
   margin-bottom: 27.6rem;
 
+  @media (max-width: 600px) {
+    margin-bottom: 10rem;
+  }
+
   .services-header {
     margin-bottom: 5.8rem;
   }
@@ -83,7 +87,7 @@
   }
 
   h5 {
-    font-family: SF Pro Display;
+    font-family: 'SF Pro Display', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 1.8rem;
@@ -93,7 +97,7 @@
   }
 
   p {
-    font-family: SF Pro Display;
+    font-family: 'SF Pro Display', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 1.6rem;

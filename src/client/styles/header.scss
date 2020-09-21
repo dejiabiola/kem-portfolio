@@ -73,11 +73,16 @@ header {
 
     @media (max-width: 500px) {
       max-width: 24.7rem;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
     }
+
+  
 
     p:first-of-type {
       text-transform: uppercase;
-      font-family: "SF Pro Display";
+      font-family: 'SF Pro Display', sans-serif;
       font-style: normal;
       font-weight: 500;
       font-size: 1.6rem;
@@ -87,13 +92,20 @@ header {
       display: flex;
       align-items: center;
 
+      @media (max-width: 500px) {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        display: inline-block;
+      }
+
       img {
         margin: 0 7px;
       }
     }
 
     h1 {
-      font-family: "SF Pro Display";
+      font-family: 'SF Pro Display', sans-serif;
       font-style: normal;
       font-weight: bold;
       font-size: 7.2rem;
@@ -108,7 +120,7 @@ header {
     }
 
     h3 {
-      font-family: "SF Pro Display";
+      font-family: 'SF Pro Display', sans-serif;
       font-style: normal;
       font-weight: bold;
       font-size: 1.8rem;
@@ -124,7 +136,7 @@ header {
     }
 
     p:last-of-type {
-      font-family: "SF Pro Display";
+      font-family: 'SF Pro Display', sans-serif;
       font-style: normal;
       font-weight: normal;
       font-size: 1.6rem;
@@ -150,13 +162,19 @@ header {
       align-items: center;
       color: #303030;
 
+      @media (max-width: 500px) {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
       &:hover {
         color: #303030;
         text-decoration: none;
       }
 
       span {
-        font-family: "SF Pro Display";
+        font-family: 'SF Pro Display', sans-serif;
         font-style: normal;
         font-weight: 500;
         font-size: 1.6rem;
@@ -207,9 +225,6 @@ header {
     -o-transition: position 2.9s;
   }
 
-  // .toggle .toggle-menu {
-  //     background-color: white;
-  // }
 
   .nav-list {
     list-style: none;
@@ -219,7 +234,7 @@ header {
   .nav-list-item {
     text-align: center;
     padding: 10px 0;
-    font-family: "Red Hat Display";
+    font-family: "Red Hat Display", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 1.6rem;

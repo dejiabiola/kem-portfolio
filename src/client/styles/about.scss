@@ -6,7 +6,7 @@
   margin-bottom: 21.1rem;
 
   @media (max-width: 965px) {
-    flex-direction: column;
+    display: block;
   }
 
   @media (max-width: 560px) {
@@ -24,7 +24,7 @@
     }
 
     @media (max-width: 560px) {
-      margin: 0 2rem;
+      margin: 0 1.5rem;
       width: 31.6rem;
       height: 41.2rem;
       max-width: 100%;
@@ -49,7 +49,7 @@
       }
 
       @media (max-width: 330px) {
-        width: 31.6rem;
+        width: 25.6rem;
         height: 30.2rem;
         max-width: 100%;
       }
@@ -72,7 +72,7 @@
       }
 
       @media (max-width: 330px) {
-        max-width: 110%;
+        max-width: 80%;
         height: 77%;
       }
     }
@@ -90,6 +90,8 @@
 
     @media (max-width: 965px) {
       margin-top: 3rem;
+      margin-left: 0;
+      margin-right: 0;
     }
 
     .about-header.header {
@@ -112,7 +114,7 @@
     }
 
     p {
-      font-family: 'SF Pro Display';
+      font-family: 'SF Pro Display', sans-serif;
       font-style: normal;
       font-weight: normal;
       font-size: 1.6rem;
@@ -161,7 +163,7 @@
       }
 
       span {
-        font-family: 'SF Pro Display';
+        font-family: 'SF Pro Display', sans-serif;
         font-style: normal;
         font-weight: 500;
         font-size: 1.6rem;
