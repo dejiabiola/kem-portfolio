@@ -1,6 +1,10 @@
 .portfolio-section {
   margin-bottom: 20.6rem;
 
+  @media (max-width: 600px) {
+    margin-bottom: 10rem;
+  }
+
   .portfolio-header {
     margin-bottom: 5.1rem;
   }
@@ -52,7 +56,7 @@
       padding: 0 2rem;
 
       h5 {
-        font-family: "SF Pro Display";
+        font-family: 'SF Pro Display', sans-serif;
         font-style: normal;
         font-weight: bold;
         font-size: 1.8rem;
@@ -64,7 +68,7 @@
       }
 
       p {
-        font-family: "SF Pro Display";
+        font-family: 'SF Pro Display', sans-serif;
         font-style: normal;
         font-weight: 500;
         font-size: 1.6rem;
@@ -127,7 +131,7 @@
     transition: 1s all ease;
     height: 50rem;
     flex: 0 1 30rem;
-    font-family: "SF Pro Display";
+    font-family: 'SF Pro Display', sans-serif;
   }
 
   .profile-container::before {
@@ -233,6 +237,7 @@
     position: relative;
     opacity: 0;
     transition: all 0.3s ease;
+    color: white;
   }
 
   .profile-container:hover .profile-card {
@@ -250,6 +255,25 @@
     cursor: pointer;
   }
 
+  .profile-card h2 {
+    line-height: 1.2;
+    color: #222;
+  }
+  .profile-card h4 {
+    line-height: 1.5;
+    color: #444;
+    color: white;
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+
+  .profile-card p {
+    line-height: 2.2rem;
+    color: white;
+    margin: 2.0rem 0;
+    font-size: 1.6rem;
+  }
+
   /* Profile Button */
   .profile-card a {
     display: inline-block;
@@ -257,10 +281,10 @@
     font-size: 1.6rem;
     font-weight: 500;
     color: #ffffff;
-    padding: .8rem 2.0rem;
+    padding: 0.8rem 2rem;
     margin-top: 1rem;
     background: #2371ae;
-    border-radius: 5.0rem;
+    border-radius: 5rem;
     background: linear-gradient(to right, #bb47d4 0%, #2371ae 100%);
   }
 }
