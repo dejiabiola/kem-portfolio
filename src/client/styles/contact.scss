@@ -41,7 +41,12 @@
       line-height: 1.9rem;
       text-align: center;
       color: #ffffff;
+
+      @media (max-width: 303px) {
+        font-size: 1.3rem;
+      }
     }
+    
   }
 
   .contact-image-div {
