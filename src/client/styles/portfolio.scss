@@ -27,99 +27,8 @@
     &:last-of-type {
       margin-bottom: 0;
     }
-
-    // img {
-    //   height: 100% !important;
-    // }
   }
 
-  .portfolio-image-wrapper {
-    position: relative;
-
-    & > div {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      width: 100%;
-      height: 51.6rem;
-      transition: all 0.5s;
-      background: linear-gradient(
-        180deg,
-        rgba(48, 48, 48, 0) 0%,
-        rgba(48, 48, 48, 0.81) 100%
-      );
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding: 0 2rem;
-
-      h5 {
-        font-family: 'SF Pro Display', sans-serif;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 1.8rem;
-        line-height: 2.1rem;
-        text-align: center;
-        color: #ffffff;
-        margin-bottom: 1.6rem;
-        margin-top: 18rem;
-      }
-
-      p {
-        font-family: 'SF Pro Display', sans-serif;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 1.6rem;
-        line-height: 1.9rem;
-        text-align: center;
-        color: #ffffff;
-      }
-    }
-  }
-
-  @media (min-width: 552px) and (max-width: 823px) {
-    div.third-row {
-      flex: 1 1 auto;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-
-      img {
-        height: 30rem;
-        width: 48.4%;
-      }
-    }
-  }
-
-  img {
-    height: 30rem;
-    object-fit: cover;
-    max-width: 100%;
-
-    &.port-2 {
-      height: 51.6rem;
-    }
-
-    &.port-4 {
-      height: 51.6rem;
-    }
-
-    &.port-6 {
-      height: 51.6rem;
-    }
-
-    @media (min-width: 1003px) {
-      width: 31rem;
-    }
-  }
-
-  .port-1,
-  .port-2,
-  .port-3 {
-    margin-bottom: 3rem;
-  }
 
   /* .profile-container:hover */
   .profile-container {
@@ -154,30 +63,30 @@
   }
 
   .port-container-1::before {
-    background-image: url(../media/new-port-1.jpeg);
+    background-image: url(https://res.cloudinary.com/kemkem-dev/image/upload/c_scale,h_500,w_500/v1601063618/portfolio/new-port-1_fdfoiu.jpg);
   }
 
   .port-container-2::before {
-    background-image: url(../media/new-port-2.jpeg);
+    background-image: url(https://res.cloudinary.com/kemkem-dev/image/upload/c_scale,h_500,w_500/v1601063618/portfolio/new-port-2_uwlgpl.jpg);
   }
 
   .port-container-3::before {
-    background-image: url(../media/new-port-3.jpeg);
+    background-image: url(https://res.cloudinary.com/kemkem-dev/image/upload/c_scale,h_500,w_500/v1601063627/portfolio/new-port-3_cxj8pl.jpg);
   }
 
   .port-container-4::before {
-    background-image: url(../media/new-port-4.jpeg);
+    background-image: url(https://res.cloudinary.com/kemkem-dev/image/upload/c_scale,h_500,w_500/v1601063691/portfolio/new-port-4_dlvmpd.jpg);
   }
 
   .port-container-5::before {
-    background-image: url(../media/new-port-5.jpeg);
+    background-image: url(https://res.cloudinary.com/kemkem-dev/image/upload/c_scale,w_500/v1601063695/portfolio/new-port-5_f6hpjs.jpg);
   }
 
   .port-container-6::before {
-    background-image: url(../media/new-port-6.jpg);
+    background-image: url(https://res.cloudinary.com/kemkem-dev/image/upload/c_scale,h_500,w_500/v1601063692/portfolio/new-port-6_uuwkso.jpg);
   }
 
-  .profile-container:hover:before {
+  .profile-container:hover::before {
     opacity: 0;
     transition: all 0.5s ease;
   }
