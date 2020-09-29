@@ -402,7 +402,10 @@
               <a href="tel:+234-813-640-4552">+234-813-640-4552</a>
             </div>
           </div>
-          <form class="contact-form" data-aos="fade-up" data-netlify="true" name="contact" method="POST">
+          <form class="contact-form" data-aos="fade-up" data-netlify="true" name="contact" method="POST" netlify-honeypot="bot-field">
+            <p class="hidden" style="visibility: hidden;height: 0px;">
+              <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+            </p>
             <input type="text" placeholder="Full Name" name="name" required />
             <div>
               <input type="email" placeholder="Email" name="email" required />
@@ -416,7 +419,7 @@
               placeholder="Enter your message"
               required
             ></textarea>
-            <button>Submit</button>
+            <button type="submit">Submit</button>
           </form>
         </div>
       </section>
