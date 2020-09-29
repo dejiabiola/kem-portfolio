@@ -9,19 +9,12 @@ export const init = function () {
   var element2 = document.getElementsByClassName('chart')[1];
   var element3 = document.getElementsByClassName('chart')[2];
   var element4 = document.getElementsByClassName('chart')[3];
-  // var mobileMenuItems = document.getElementsByClassName('mobile-link')
   var toggleButton = document.querySelector('.toggle-menu-wrapper');
   var navBar = document.querySelector('.navbar');
   var mobileNav = document.querySelector('.nav-bar');
   toggleButton.addEventListener('click', function () {
     navBar.classList.toggle('toggle');
     mobileNav.classList.toggle('toggle');
-    // for(let item of mobileMenuItems) {
-    //   item.addEventListener('click', function () {
-    //     navBar.classList.toggle('toggle');
-    //     mobileNav.classList.toggle('toggle');
-    //   });
-    // }
   });
 
   
