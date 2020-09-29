@@ -164,6 +164,12 @@
     color: #303030;
     border: none;
 
+    &:active, &:visited {
+      outline: none;
+      border: none;
+      box-shadow: none;
+    }
+
     @media (max-width: 1066px) {
       margin: 0 auto;
     }
