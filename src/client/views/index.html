@@ -402,18 +402,19 @@
               <a href="tel:+234-813-640-4552">+234-813-640-4552</a>
             </div>
           </div>
-          <form action="" class="contact-form" data-aos="fade-up">
-            <input type="text" placeholder="Full Name" />
+          <form action="" class="contact-form" data-aos="fade-up" data-netlify="true">
+            <input type="text" placeholder="Full Name" name="name" required />
             <div>
-              <input type="text" placeholder="Email" />
-              <input type="text" placeholder="Phone Number" />
+              <input type="email" placeholder="Email" name="email" required />
+              <input type="number" placeholder="Phone Number" name="phone-number" required />
             </div>
             <textarea
-              name=""
+              name="message"
               id=""
               cols="30"
               rows="10"
               placeholder="Enter your message"
+              required
             ></textarea>
             <button>Submit</button>
           </form>
