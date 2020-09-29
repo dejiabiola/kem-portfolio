@@ -60,30 +60,31 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #0f0d16;
+    object-fit: cover;
   }
 
   .port-container-1::before {
-    background-image: url(https://res.cloudinary.com/kemkem-dev/image/upload/c_scale,h_500,w_500/v1601063618/portfolio/new-port-1_fdfoiu.jpg);
+    background-image: url(https://res.cloudinary.com/kemkem-dev/image/upload/c_fit,h_600,w_600/v1601063618/portfolio/new-port-1_fdfoiu.jpg);
   }
 
   .port-container-2::before {
-    background-image: url(https://res.cloudinary.com/kemkem-dev/image/upload/c_scale,h_500,w_500/v1601063618/portfolio/new-port-2_uwlgpl.jpg);
+    background-image: url(https://res.cloudinary.com/kemkem-dev/image/upload/c_fit,h_600,w_600/v1601063618/portfolio/new-port-2_uwlgpl.jpg);
   }
 
   .port-container-3::before {
-    background-image: url(https://res.cloudinary.com/kemkem-dev/image/upload/c_scale,h_500,w_500/v1601063627/portfolio/new-port-3_cxj8pl.jpg);
+    background-image: url(https://res.cloudinary.com/kemkem-dev/image/upload/c_fit,h_600,w_600/v1601063627/portfolio/new-port-3_cxj8pl.jpg);
   }
 
   .port-container-4::before {
-    background-image: url(https://res.cloudinary.com/kemkem-dev/image/upload/c_scale,h_500,w_500/v1601063691/portfolio/new-port-4_dlvmpd.jpg);
+    background-image: url(https://res.cloudinary.com/kemkem-dev/image/upload/c_fit,h_600,w_600/v1601063691/portfolio/new-port-4_dlvmpd.jpg);
   }
 
   .port-container-5::before {
-    background-image: url(https://res.cloudinary.com/kemkem-dev/image/upload/c_scale,w_500/v1601063695/portfolio/new-port-5_f6hpjs.jpg);
+    background-image: url(https://res.cloudinary.com/kemkem-dev/image/upload/c_fit,h_600,w_600/v1601063695/portfolio/new-port-5_f6hpjs.jpg);
   }
 
   .port-container-6::before {
-    background-image: url(https://res.cloudinary.com/kemkem-dev/image/upload/c_scale,h_500,w_500/v1601063692/portfolio/new-port-6_uuwkso.jpg);
+    background-image: url(https://res.cloudinary.com/kemkem-dev/image/upload/c_fit,h_600,w_600/v1601063692/portfolio/new-port-6_uuwkso.jpg);
   }
 
   .profile-container:hover::before {
