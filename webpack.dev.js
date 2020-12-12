@@ -4,7 +4,10 @@ const HtmlWebpackPlugin = require("html-webpack-plugin")
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 
 module.exports = {
-    entry: './src/client/index.js',
+    entry: {
+      index: './src/client/index.js',
+      caseStudies: './src/client/caseStudies.js'
+    }, 
     mode: 'development',
     devtool: 'source-map',
     stats: 'verbose',
@@ -38,8 +41,16 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: "./src/client/views/index.html",
-            filename: "./index.html",
+          template: "./src/client/views/index.html",
+          filename: "./index.html",
+          inject: true,
+          chunks: ['index']
+        }),
+        new HtmlWebpackPlugin({
+          template: "./src/client/views/caseStudies.html",
+          filename: "./caseStudies.html",
+          inject: true,
+          chunks: ['index']
         }),
         new CleanWebpackPlugin({
             // Simulate the removal of files

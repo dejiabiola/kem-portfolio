@@ -9,7 +9,7 @@ const WorkboxPlugin = require('workbox-webpack-plugin');
 
 module.exports = {
   mode: 'production',
-  entry: ['babel-polyfill', './src/client/index.js'],
+  entry: ['babel-polyfill', './src/client/index.js', './src/client/caseStudies.js'],
   optimization: {
     minimizer: [new TerserPlugin({}), new OptimizeCSSAssetsPlugin({})]
   },
@@ -49,6 +49,12 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/client/views/index.html',
       filename: './index.html'
+    }),
+    new HtmlWebpackPlugin({
+      template: "./src/client/views/caseStudies.html",
+      filename: "./caseStudies.html",
+      inject: true,
+      chunks: ['index']
     }),
     new CleanWebpackPlugin({
       // Simulate the removal of files
