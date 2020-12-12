@@ -1,5 +1,5 @@
 .services-section {
-  margin-bottom: 27.6rem;
+  margin-bottom: 20.0rem;
 
   @media (max-width: 600px) {
     margin-bottom: 10rem;
@@ -18,8 +18,8 @@
 
 
 .services-card {
-  background: #ffffff;
-  box-shadow: .0rem .8rem 1.6rem rgba(51, 51, 51, 0.2);
+  background:#2B2B2B;
+  box-shadow: 0rem 1.6rem 2.4rem rgba(0, 0, 0, 0.25);
   border-radius: .8rem;
   width: 35.7rem;
   min-height: 30.0rem;
@@ -92,7 +92,7 @@
     font-weight: bold;
     font-size: 1.8rem;
     line-height: 2.1rem;
-    color: #2b2b2b;
+    color:#FFFFFF;
     margin-bottom: 3.0rem;
   }
 
@@ -102,7 +102,7 @@
     font-weight: normal;
     font-size: 1.6rem;
     line-height: 1.9rem;
-    color: #2B2B2B;
+    color:#FFFFFF;
   }
 }
 
