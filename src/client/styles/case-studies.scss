@@ -1,0 +1,14 @@
+.header-section {
+  &.case-studies-header {
+    min-height: unset;
+    margin-bottom: 13.3rem;
+
+    @media (max-width: 50rem) {
+      margin-bottom: 5rem;
+    }
+  }
+}
+
+main {
+  
+}
