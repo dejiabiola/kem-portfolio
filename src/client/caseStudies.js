@@ -1,5 +1,5 @@
 // Import main Js Funtion
-import { init } from './js/caseStudies';
+import { init } from './js/app';
 import 'bootstrap';
 
 

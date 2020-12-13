@@ -30,6 +30,14 @@
   margin-right: 1rem;
   margin-left: 1rem;
 
+  &:hover {
+    background: #00FFBB;
+
+    h5, p {
+      color: #303030;
+    }
+  }
+
   
   @media (max-width: 500px) {
     padding: 1.6rem 1.3rem 2rem 2.1rem;
@@ -93,7 +101,7 @@
     font-size: 1.8rem;
     line-height: 2.1rem;
     color:#FFFFFF;
-    margin-bottom: 3.0rem;
+    margin-bottom: 1.6rem;
   }
 
   p {

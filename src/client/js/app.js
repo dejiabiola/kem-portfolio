@@ -94,7 +94,7 @@ export const init = function () {
   gsap.to('.layer-2', { y: '-100%', delay: .4 })
   gsap.to('.layer-3', { y: '-100%', delay: .5 })
   gsap.to('.page-overlay', { y: '-100%', delay: 1.0 })
-  gsap.from('nav', { delay: 1, opacity: 0, duration: 2 })
+  gsap.from('.nav-index', { delay: 1, opacity: 0, duration: 2 })
   gsap.from('.hero-text-wrapper .hi', 0.5, { delay: 1.6, opacity: 0, y: '10rem', ease: 'power1.out' })
   gsap.from('.hero-text-wrapper h1', 0.5, { delay: 1.8, opacity: 0, y: '10rem', ease: 'power1.out' })
   gsap.from('.hero-text-wrapper h3', 0.5, { delay: 2, opacity: 0, y: '10rem', ease: 'power1.out' })
