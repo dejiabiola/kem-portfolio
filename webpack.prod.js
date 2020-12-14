@@ -53,8 +53,6 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "./src/client/views/caseStudies.html",
       filename: "./caseStudies.html",
-      inject: true,
-      chunks: ['index']
     }),
     new CleanWebpackPlugin({
       // Simulate the removal of files
